@@ -1,0 +1,1 @@
+#r "../../packages/ZedGraph/lib/net35-Client/ZedGraph.dll" 

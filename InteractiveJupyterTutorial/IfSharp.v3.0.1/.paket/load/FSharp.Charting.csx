@@ -1,0 +1,1 @@
+#r "../../packages/FSharp.Charting/lib/net45/FSharp.Charting.dll" 

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>IfSharp.Kernel</name></assembly>
+<members>
+<member name="M:Config.defaultConfig(System.String,System.String)">
+<summary>
+ Convenience method for getting a setting with a default value
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.NuGetManager.remove_StdOutDataReceived(Microsoft.FSharp.Control.FSharpHandler{System.Object})">
+<summary>
+ This event is called whenever a line is written to the error writer
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.NuGetManager.remove_StdErrDataReceived(Microsoft.FSharp.Control.FSharpHandler{System.Object})">
+<summary>
+ This event is called whenever a line is written to the error writer
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.NuGetManager.StdOutDataReceived">
+<summary>
+ This event is called whenever a line is written to the error writer
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.NuGetManager.StdErrDataReceived">
+<summary>
+ This event is called whenever a line is written to the error writer
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.NuGetManager.PackagesDir">
+<summary>
+ The directory for the packages
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.NuGetManager.add_StdOutDataReceived(Microsoft.FSharp.Control.FSharpHandler{System.Object})">
+<summary>
+ This event is called whenever a line is written to the error writer
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.NuGetManager.add_StdErrDataReceived(Microsoft.FSharp.Control.FSharpHandler{System.Object})">
+<summary>
+ This event is called whenever a line is written to the error writer
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.NuGetManager.Preprocess(System.String)">
+<summary>
+ Preprocesses the specified source string
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.NuGetManager.ParseNugetLine(System.String)">
+<summary>
+ Parses a &apos;nuget line&apos;. Example #N &quot;&lt;package&gt;[/&lt;version&gt;[/pre]]&quot;.
+ Returns a tuple with the name of the package, the version, and if
+ prerelease should be used or not.
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.NuGetManager">
+<summary>
+ The NuGetManager class contains methods for downloading nuget packages and such
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.PreprocessResults">
+<summary>
+ The results from preprocessing some code
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.CustomErrorInfo">
+<summary>
+ Wrapper for ErrorInfo
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.AssemblyInfo">
+<summary>
+ Assembly information
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Url(System.String)">
+<summary>
+ Downloads the specified url and wraps a BinaryOutput around the results.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Table``1(System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IEnumerable{System.String}})">
+<summary>
+ Creates a TableOutput out of a sequence of items and a list of property names.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Row``1(System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo},``0)">
+<summary>
+  Creates an array of strings with the specified properties and the item to get the values out of.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Math(System.String)">
+<summary>
+ Wraps a LatexOutput around a string in order to send to the UI.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Latex(System.String)">
+<summary>
+ Wraps a LatexOutput around a string in order to send to the UI.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Image(System.String)">
+<summary>
+ Loads a local image from disk and wraps a BinaryOutput around the image data.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Image(System.Collections.Generic.IEnumerable{System.Byte},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Wraps a BinaryOutput around image bytes with the specified content-type
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Util.Html(System.String)">
+<summary>
+ Wraps a HtmlOutput around a string in order to send to the UI.
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.IntellisenseRequest">
+<summary>
+ Custom message used only by the web front end.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IAsyncPrinter.Print(System.Object,System.Boolean,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.Object}},Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Object,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}}})">
+<summary>
+ Print the project in asynchronous manner (possible doing some async computations)
+ what to print -&gt; is the print is execution_result -&gt; send results callback -&gt; send dispaly callback
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IAsyncPrinter.CanPrint(System.Object)">
+<summary>
+ Whether the printer is capable of printing the object
+</summary>
+</member>
+<member name="F:IfSharp.Kernel.IfSharpKernel.hmac">
+<summary>
+ Sign a set of strings.
+</summary>
+</member>
+<member name="F:IfSharp.Kernel.IfSharpKernel.headerCode">
+<summary>
+ Gets the header code to prepend to all items
+</summary>
+</member>
+<member name="F:IfSharp.Kernel.IfSharpKernel.activeComms">
+<summary>
+ Comms that are in the open state
+</summary>
+</member>
+<member name="F:IfSharp.Kernel.IfSharpKernel.registeredComms">
+<summary>
+ Registered comm definitions (can be activated from Frontend side by comm_open message containing registered comm_target name)
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.UpdateDisplayData``2(System.String,``0,``1)">
+<summary>
+ Updates the display data for the particular display_id
+ Return display_id of updated cell
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.UnregisterComm(System.String)">
+<summary>
+ Removes comm registration by specified comm target_name
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.StartAsync">
+<summary>
+ Starts the kernel asynchronously
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.SendExecuteResult``2(``0,Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``1}})">
+<summary>
+ Sends plain text execution results as well as other optional representations
+ Return display_id of generated cell
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.SendDisplayData``1(System.String,``0)">
+<summary>
+ Adds display data to the list of display data to send to the client
+ Return display_id of generated cell
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.RegisterComm(System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.Dictionary{System.String,System.Object},Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{IfSharp.Kernel.CommOpen,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.Dictionary{System.String,System.Object},Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{IfSharp.Kernel.CommMessage,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpFunc{IfSharp.Kernel.CommTearDown,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Registers a comm with specified target_name and callbacks
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.DisplayValue``1(``0)">
+<summary>
+ Shows the value in a frontend
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.ClearDisplay">
+<summary>
+ Clears the display
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.IfSharpKernel.AddPayload(System.String)">
+<summary>
+ Sends auto complete information to the client
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.CommCallbacks.onClose">
+<summary>
+ called upon comm close
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.CommCallbacks.onMessage">
+<summary>
+ called to handle every received message while the come is opened
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.CommCallbacks.onOpen">
+<summary>
+ called upon comm creation
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.CommCallbacks">
+<summary>
+ The set of callbacks which define comm registration at the kernel side
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.SendCommMessage">
+<summary>
+ A function that by it&apos;s side effect sends the received dict as a comm_message
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.DirectivePreprocessor.parseDirectiveLine(System.String,System.String)">
+<summary>
+ Parses a directive line. Example: #N &quot;Deedle&quot;
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.DirectivePreprocessor.partitionLines(System.String[])">
+<summary>
+ Separates into map of directive types
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.FsCompilerInternals.extractNames(System.String,System.Int32)">
+<summary>
+ Tries to figure out the names to pass to GetDeclarations or GetMethods.
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.FsCompilerInternals.formatTip(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpToolTipText{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,System.String},System.String}})">
+<summary>
+ Formats a DataTipText into a string
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.FsCompilerInternals.buildFormatElement(System.Boolean,Microsoft.FSharp.Compiler.SourceCodeServices.FSharpToolTipElement{System.String},System.Text.StringBuilder,Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,System.String},System.String})">
+<summary>
+ Converts a ToolTipElement into a string
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.FsCompilerInternals.buildFormatComment(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,System.String},System.String},Microsoft.FSharp.Compiler.SourceCodeServices.FSharpXmlDoc,System.Text.StringBuilder)">
+<summary>
+ Formats a comment into a string
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.ExtensionMethods.Exception.CompleteStackTrace(System.Exception)">
+<summary>
+ Convenience method for getting the full stack trace by going down the inner exceptions
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Evaluation.GetDeclarations(System.String,System.Int32,System.Int32)">
+<summary>
+ New way of getting the declarations
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Evaluation.GetLastExpression">
+<summary>
+ Gets `it` only if `it` was printed to the console
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Evaluation.startSession">
+<summary>
+ Start the F# interactive session with HAS_FSI_ADDHTMLPRINTER symbol defined
+</summary>
+</member>
+<member name="P:IfSharp.Kernel.Evaluation.addHtmlPrinter">
+<summary>
+ Extend the `fsi` object with `fsi.AddHtmlPrinter` 
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.addDefaultDisplayPrinters">
+<summary>
+ Adds default display printers
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.findDisplayPrinter(System.Type)">
+<summary>
+ Finds a display printer based off of the type
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.defaultDisplayPrinter``1(``0)">
+<summary>
+ Default display printer
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.clearDisplayPrinters">
+<summary>
+ Removes all registered async diaplay printers
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.addAsyncDisplayPrinter(IfSharp.Kernel.IAsyncPrinter,System.Int32)">
+<summary>
+ Adds a custom async display printer for extensibility
+ Priority affects the cases where several printers are capabale of printing the save value.
+ The printer with higher priority is selected
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.addDisplayPrinter``1(Microsoft.FSharp.Core.FSharpFunc{``0,IfSharp.Kernel.BinaryOutput})">
+<summary>
+ Adds a custom display printer for extensibility
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.Printers.htmlEncode(System.String)">
+<summary>
+ Convenience method for encoding a string within HTML
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.Start(System.String[])">
+<summary>
+ First argument must be an Jupyter connection file, blocks forever
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.StartJupyter">
+<summary>
+ Starts jupyter in the user&apos;s home directory
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.Install(System.Boolean)">
+<summary>
+ Installs the ifsharp files if they do not exist
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.Help(System.Object)">
+<summary>
+ Global help function
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.Display(System.Object)">
+<summary>
+ Global display function
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.Clear">
+<summary>
+ Global clear display function
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.AddFsiPrinter``1">
+<summary>
+ Convenience method for adding an fsi printer
+</summary>
+</member>
+<member name="M:IfSharp.Kernel.App.AddDisplayPrinter``1">
+<summary>
+ Public API for addDisplayPrinter
+</summary>
+</member>
+<member name="T:IfSharp.Kernel.Globals.Globals">
+<summary>
+ This module provides access to common types and functions so the user can get intellisense
+</summary>
+</member>
+</members>
+</doc>

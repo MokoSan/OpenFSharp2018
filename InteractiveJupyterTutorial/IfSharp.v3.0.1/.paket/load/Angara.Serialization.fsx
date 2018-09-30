@@ -1,0 +1,1 @@
+#r "../../packages/Angara.Serialization/lib/net452/Angara.Serialization.dll" 

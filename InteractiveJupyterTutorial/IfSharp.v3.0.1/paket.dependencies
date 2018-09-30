@@ -1,0 +1,9 @@
+framework: net471
+generate_load_scripts: true
+source https://api.nuget.org/v3/index.json
+nuget Accord.Controls 3.8.0
+nuget Accord.MachineLearning 3.8.0
+nuget FSharp.Control.AsyncSeq ~> 2.0.21
+nuget FSharp.Core 4.3.4
+nuget Itis.Angara.Base ~> 0.3.3
+github mndrake/IfSharpLab src/DeedleFormat.fs

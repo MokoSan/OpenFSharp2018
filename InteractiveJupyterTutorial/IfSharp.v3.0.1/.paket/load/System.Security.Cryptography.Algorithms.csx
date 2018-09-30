@@ -1,0 +1,7 @@
+#load "System.IO.csx" 
+#load "System.Runtime.csx" 
+#load "System.Security.Cryptography.Encoding.csx" 
+#load "System.Security.Cryptography.Primitives.csx" 
+#r "System.Core" 
+#r "mscorlib" 
+#r "../../packages/System.Security.Cryptography.Algorithms/lib/net463/System.Security.Cryptography.Algorithms.dll" 

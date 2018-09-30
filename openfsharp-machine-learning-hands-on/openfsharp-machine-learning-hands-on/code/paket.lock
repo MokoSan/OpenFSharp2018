@@ -1,0 +1,23 @@
+RESTRICTION: >= net45
+NUGET
+  remote: https://www.nuget.org/api/v2
+    DiffSharp (0.6.3)
+      FsAlg (>= 0.5.8)
+      FSharp.Quotations.Evaluator (>= 1.0.6)
+    FsAlg (0.5.13)
+    FSharp.Core (4.5.2)
+    FSharp.Data (2.4.6)
+    FSharp.Quotations.Evaluator (1.1.2)
+      FSharp.Core (>= 3.0.2)
+    Google.DataTable.Net.Wrapper (3.1.2)
+    MathNet.Numerics (4.5.1)
+    MathNet.Numerics.FSharp (4.5.1)
+      FSharp.Core (>= 4.3.3)
+      MathNet.Numerics (>= 4.5.1)
+    Newtonsoft.Json (11.0.2)
+    Suave (2.5)
+      FSharp.Core (>= 4.0 < 5.0) - restriction: || (&& (>= net45) (>= netstandard2.0)) (>= net461)
+    XPlot.GoogleCharts (1.5)
+      FSharp.Core
+      Google.DataTable.Net.Wrapper (>= 3.1.2)
+      Newtonsoft.Json (>= 11.0.2)

@@ -1,0 +1,6 @@
+#load "Accord.csx" 
+#load "Accord.MachineLearning.csx" 
+#load "Accord.Math.csx" 
+#load "Accord.Statistics.csx" 
+#load "ZedGraph.csx" 
+#r "../../packages/Accord.Controls/lib/net462/Accord.Controls.dll" 

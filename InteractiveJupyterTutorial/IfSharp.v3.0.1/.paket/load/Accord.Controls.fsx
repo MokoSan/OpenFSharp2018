@@ -1,0 +1,6 @@
+#load "Accord.fsx" 
+#load "Accord.MachineLearning.fsx" 
+#load "Accord.Math.fsx" 
+#load "Accord.Statistics.fsx" 
+#load "ZedGraph.fsx" 
+#r "../../packages/Accord.Controls/lib/net462/Accord.Controls.dll" 

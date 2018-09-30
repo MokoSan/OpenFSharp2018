@@ -1,0 +1,1 @@
+#r "../../packages/MathNet.Numerics/lib/net40/MathNet.Numerics.dll" 

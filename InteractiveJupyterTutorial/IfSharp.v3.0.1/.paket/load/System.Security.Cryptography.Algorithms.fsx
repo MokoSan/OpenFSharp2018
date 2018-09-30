@@ -1,0 +1,6 @@
+#load "System.IO.fsx" 
+#load "System.Runtime.fsx" 
+#load "System.Security.Cryptography.Encoding.fsx" 
+#load "System.Security.Cryptography.Primitives.fsx" 
+#r "System.Core" 
+#r "../../packages/System.Security.Cryptography.Algorithms/lib/net463/System.Security.Cryptography.Algorithms.dll" 
